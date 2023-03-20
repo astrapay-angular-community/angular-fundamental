@@ -1,12 +1,12 @@
-import {Directive, ElementRef, Input, OnInit} from '@angular/core';
-
+import {Directive, ElementRef, Input} from '@angular/core';
 
 @Directive({
-  selector: '[appColor]'
+  selector: '[appColor2]'
 })
-export class ColorDirective implements OnInit{
+export class Color2Directive {
 
-  @Input() setColor: string = 'blue'
+  @Input() setColor: string = 'green'
+
   @Input() setValue: string = ''
 
   constructor(private elementRef: ElementRef) { }

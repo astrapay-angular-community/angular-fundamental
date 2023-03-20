@@ -1,16 +1,17 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
-import {MainModule} from "./main/main.module";
 import {AppComponent} from "./app.component";
+import { ColorDirective } from './color.directive';
+import { Color2Directive } from './color2.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ColorDirective,
+    Color2Directive,
   ],
   imports: [
     BrowserModule,
-    MainModule,
 
   ],
   providers: [],
